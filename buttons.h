@@ -29,19 +29,6 @@ extern "C" {
 	extern volatile uint8_t ButtonsDelay;
 	extern buttons_t last_buttons;
 
-	/***task_Buttons();****/
-#define TASK_BUTTONS()	do{buttons_t raw_buttons;\
-	if(!ButtonsDelay) {\
-		ButtonsDelay = 30;
-		raw_buttons.button1 = !BUTTON1;\
-		raw_buttons.button2 = !BUTTON2;\
-		filtered_buttons.buttons = raw_buttons.buttons & last_buttons.buttons;\
-		last_buttons.buttons = raw_buttons.buttons;\
-	}else\
-		ButtonsDelay--;\
-		}while(0)
-	/**********************/
-
 	inline void Buttons_Init();
 	inline void task_Buttons();
 
