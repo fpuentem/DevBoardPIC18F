@@ -9,6 +9,7 @@ MPLAP IDE X
 ## Authors
 * **Fabricio Puente-Mansilla** - *Documentation work* - [fpuentem](https://github.com/fpuentem)
 * **Gustavo Boza-Quispe** - *Initial work*
+* **James Espichan Vilca**
 
 ## License
 This project is licensed under ...
